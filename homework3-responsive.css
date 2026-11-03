@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    padding: 16px;
+}
+
+main {
+    max-width: 100%;
+}
+.highlight-examplepage {
+    text-decoration-color: rgb(206, 50, 6);
+    text-decoration: underline;
+    color: rgb(206, 50, 6);
+}
+
+.homework-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid #0f020f;
+    width: auto;
+    border-radius: 8px;
+    background-color:antiquewhite;
+    
+}
+
+.homework-nav a {
+    margin-right: 0;
+}
+
+.homework-header,
+.Class-Paragraph1,
+.example-image,
+.example-paragraph {
+    max-width: 100%;
+}
+
+.example-paragraph {
+    width: auto;
+    height: auto;
+}
+
+.flexbox-example {
+    width: 100%;
+    max-width: 100%;
+}
+
+.grid-example {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+}
+
+img.example-image {
+    display: block;
+    width: 600px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .homework-nav a {
+        padding: 8px 10px;
+    }
+
+    .homework-header,
+    .Class-Paragraph1,
+    .example-header,
+    .example-paragraph,
+    .example-image {
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .flexbox-example {
+        flex-direction: column;
+    }
+
+    .grid-example {
+        grid-template-columns: 1fr;
+    }
+
+    img.example-image {
+        width: 100%;
+    }
+.grid-card-image img {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px;
+}
+    @media screen and (max-width: 320px) (max) {
+        img.example-image {
+            width: 100%;
+        }
+    }
+}

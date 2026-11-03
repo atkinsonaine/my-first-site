@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #3: Responsive Page</title>
+    <link rel="stylesheet" href="homework.3.css">
+    <link rel="stylesheet" href="homework3-responsive.css">
+</head>
+<body>
+
+    <main>
+        <h1 class="homework-header">What We Learned This Week in Class <span class="highlight-examplepage"></span>Example Page</span></h1>
+        <p class="Class-Paragraph1">
+            This week in class, we focused on styling and formatting our webpages.
+            We learned how to use CSS to enhance the appearance of HTML content and
+            how to structure code for better readability and maintainability. During
+            Week 3, Mr. Reena taught us how to use CSS to organize a website using
+            Flexbox and Grid. I also learned how to make a website adjust to different
+            screen sizes, like phones, tablets, and computers, so it is easy to
+            navigate on different devices. This helped me understand how to make
+            websites look better and work across devices. I am still learning and
+            building my confidence in coding.
+        </p>
+
+        <section aria-labelledby="class-example-title">
+            <h2 id="class-example-title" class="example-header">
+                What We Learned This Week: Example
+            </h2>
+            <p class="example-image">
+                This is an example of what the code @media query will look like and
+                how it is applied to the page that we created this week in class.
+            </p>
+            <img class="example-image"
+                 src="Screenshot_26-10-2026_102757_docs.google.com.jpeg"
+                 alt="Screenshot of what we learned this week in class"
+                 width="600">
+        </section>
+
+        <section aria-labelledby="flexbox-title">
+            <h2 id="flexbox-title" class="example-header">Flexbox Example</h2>
+            <p class="example-image">
+                Flexbox arranges items in a row or column. These three cards use
+                <code>display: flex</code> and stack on narrow screens.
+            </p>
+            <div class="flexbox-example">
+                <article class="flexbox-card">
+                    <h3>flexbox</h3>
+                    <p>In class we also learned how to use Flexbox to create responsive layouts.</p>
+                </article>
+                <article class="flexbox-card">
+                    <h3>Uses ofFlexbox for responsive layouts</h3>
+                   <ul> 
+                        <li> learning flexbox taught me how to line my website up and set my navigation links horizontally. or vertically.</li>
+                        <li>Using flexbox also taught me how to align items and distribute space evenly.</li>
+                    </ul>
+                </article>
+               
+            </div>
+        </section>
+
+        <section aria-labelledby="grid-title">
+            <h2 id="grid-title" class="example-header">CSS Grid Example</h2>
+            <p class="example-image">
+               In CSS a CSS Grid organizes items into rows and columns. This grid uses
+                <span class="highlight">display: grid</span> and changes to one column on a phone. Here im going to add photos to show how the grid laysout the images on the screen
+            </p>
+            <div class="grid-example">
+                <article class="grid-card">
+                    <div class="grid-card-image">
+                        <img src="kilo.jpg.jpg" alt="Kilo image">
+                    </div>
+                    
+                </article>
+                <article class="grid-card">
+                    <div class="grid-card-image">
+                        <img src="dean.jpg" alt="Dean image">
+                    </div>
+                  
+                </article>
+                <article class="grid-card">
+                    <div class="grid-card-image">
+                        <img src="Philly.jpg" alt="Philly image">
+                    </div>
+                   
+                </article>
+                <article class="grid-card">
+                    <div class="grid-card-image">
+                        <img src="aine.jpg" alt="Aine image">
+                    </div>
+                 
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="responsive-title">
+            <h2 id="responsive-title" class="example-header">
+                This Page Fits on a Phone
+            </h2>
+            <p class="example-paragraph">
+                On this page  of the example page. Its content and
+                image fit within smaller screens, and the layout adjusts using a CSS
+                <span class="highlight">@media</span> query. Compare it with the
+                <a href="homework3.html" class="homework-nav">Go back to Homework #3 </a>.
+            </p>
+            <p class="example-paragraph">
+                CSS <span class="highlight">@media</span> queries help make a layout
+                cleaner and easier to use on phones, tablets, and computers.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
