@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Kilo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 style="text-align: center;">Meet Kilo</h1>
-    <img src="kilo.jpg.jpg" alt="Chihuahua named Kilo" width="200" height="200" style="display: block; margin: 0 auto;">
-    <h2 style="text-align: center;">Fun facts about Kilo</h2>
-    <ul style="text-align: center; list-style-position: inside; padding-left: 0;">
-        <li>Kilo was born June 2, 2018.</li>
-        <li>He loves to chew bones and bark at people.</li>
-        <li>He is very small but full of energy.</li>
-        <li>Kilo was rejected by his mom at 2 weeks old and had to be bottle-fed.</li>
-    </ul>
-    <p>Kilo is a small black-and-white Chihuahua who I have owned for 8 years. He is very energetic, protective, and loves to model the thousands of bandanas I put on him. Kilo was given to me when one of my best friends' dogs had puppies and the mother rejected him from the litter. He has been through thick and thin with my family, and I wouldn't trade him for the world.</p>
-    <a href="my-first-site.html">Back to my website</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content" tabindex="-1">
+        <section aria-labelledby="kilo-title">
+            <h1 id="kilo-title" style="text-align: center;">Meet Kilo</h1>
+            <img src="kilo.jpg.jpg" alt="Chihuahua named Kilo" width="200" height="200" style="display: block; margin: 0 auto;">
+        </section>
+        <section aria-labelledby="kilo-facts-title">
+            <h2 id="kilo-facts-title" style="text-align: center;">Fun facts about Kilo</h2>
+            <ul style="text-align: center; list-style-position: inside; padding-left: 0;">
+                <li>Kilo was born June 2, 2018.</li>
+                <li>He loves to chew bones and bark at people.</li>
+                <li>He is very small but full of energy.</li>
+                <li>Kilo was rejected by his mom at 2 weeks old and had to be bottle-fed.</li>
+            </ul>
+            <p>Kilo is a small black-and-white Chihuahua who I have owned for 8 years. He is very energetic, protective, and loves to model the thousands of bandanas I put on him. Kilo was given to me when one of my best friends' dogs had puppies and the mother rejected him from the litter. He has been through thick and thin with my family, and I wouldn't trade him for the world.</p>
+        </section>
+        <nav aria-label="Return navigation">
+            <a href="my-first-site.html">Back to my website</a>
+        </nav>
+    </main>
 </body>
 </html>

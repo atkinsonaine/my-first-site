@@ -6,7 +6,7 @@
     <title>My-first-website</title> 
     <style> 
     body {
-        background-color: rgb(9, 8, 8);
+        background-color: rgb(65, 10, 113);
         margin: 0;
     }
 
@@ -31,6 +31,25 @@
         background-color: rgb(120, 55, 140);
     }
 
+    a:focus-visible {
+        outline: 3px solid goldenrod;
+        outline-offset: 3px;
+    }
+
+    .skip-link {
+        position: absolute;
+        left: -10000px;
+        top: 12px;
+        z-index: 1;
+        padding: 10px 14px;
+        background-color: white;
+        color: black;
+    }
+
+    .skip-link:focus {
+        left: 12px;
+    }
+
     h1, h2, h3 {
         text-decoration: underline wavy goldenrod;
         text-underline-offset: 10px;
@@ -39,6 +58,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
     <nav class="menu-bar" aria-label="Main navigation">
         <a href="#home">Home</a>
@@ -46,23 +66,23 @@
         <a href="projects/projects.html">Projects</a>
         <a href="#kilo">Kilo</a>
         <a href="#dean">Dean</a>
-        <a href="#Philly">Philly</a>
+        <a href="#philly">Philly</a>
     </nav>
 </header>
+<main id="main-content" tabindex="-1">
 <div style="background-color: rgb(153, 102, 204); padding: 20px;">
-    <h1 id="home" style="text-align: center; color: rgb(187, 38, 73);">My First Website</h1>
+    <h1 id="home" style="text-align: center; color: rgb(19, 8, 1);">My First Website</h1>
    
 
 <div style="background-color: rgb(255, 166, 201); padding: 20px;">
     <p style="text-align: left; color: rgb(31, 46, 82);">This is my very First website on which  you can find, My projects, About me,fun facts about my pets and their personalites and more..... 
          But First lets introduce my pets
-       
+</p>
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 30px;">
-    <img src="kilo.jpg.jpg" alt="Kilo" width="180" height="180" style="object-fit: cover;">
-    <img src="dean.jpg" alt="Dean" width="180" height="180" style="object-fit: cover;">
-    <img src="Philly.jpg" alt="Philly" width="180" height="180" style="object-fit: cover;">
+    <img src="kilo.jpg.jpg" alt="Black-and-white Chihuahua named Kilo" width="180" height="180" style="object-fit: cover;">
+    <img src="dean.jpg" alt="Cat named Dean" width="180" height="180" style="object-fit: cover;">
+    <img src="Philly.jpg" alt="Dog named Philly" width="180" height="180" style="object-fit: cover;">
 </div>
-    </p>
 </div> 
 </div> 
  <div style="background-color: lightyellow; padding: 20px;">
@@ -94,7 +114,6 @@
 </div>
 
     
-    </nav>
 <div style="background-color: lightpink; padding: 20px;">
  <h3 id="dean-facts" style="text-align: center; margin-top: 50px; color: rgb(214, 64, 122);"> Fun facts about Dean </h3>
 
@@ -108,13 +127,13 @@
 </div> 
 
  <div style="background-color: lightblue; padding: 20px;"> 
-    <h2 id="Philly" style="text-align: center; margin-top: 50; color: rgb(31, 46, 82);"> This is my Pit mix Philly </h2>
+    <h2 id="philly" style="text-align: center; margin-top: 50px; color: rgb(31, 46, 82);"> This is my Pit mix Philly </h2>
 
-   <img src="Philly.jpg" alt=" Pit mix named Philly" width="220" height="220" style="display: block; margin: 0 auto;">
+   <img src="Philly.jpg" alt="Philly, a pit mix dog" width="220" height="220" style="display: block; margin: 0 auto;">
  </div> 
    
 <div style="background-color: rgb(252, 190, 124); padding: 20px;">
-      <h3 style="text-align: center; margin-top: 20; color: rgb(255, 140, 0);"> Fun facts about Philly </h3>
+      <h3 style="text-align: center; margin-top: 20px; color: rgb(21, 22, 13);"> Fun facts about Philly </h3>
     <ul style="width: 300px; margin: 0 auto;">
         <li>Philly was born March 17 2026</li>
         <li>He loves to play fetch and go on long walks</li>
@@ -123,8 +142,9 @@
     </ul>
     <p style="text-align: left;">This is Philly, he is a Pit mix who is half Dogo arengtino. My family and I have owned him  for 5 months. He is very energetic,  He loves to play Fetch, and is always by my side. Philly has a strong bond with my Dad who is his favorite person and is known for his protective nature. Even though Philly looks intimidating he is very goofy and cuddly. So far Philly is learning new tricks and is becoming a well-behaved dog in the family.</p>
  
-    </nav> <a href="#home" style="color: rgb(83, 8, 91); text-decoration: none; border: 1px solid rgb(83, 8, 91); padding: 6px 12px; display: inline-block;">take me back up</a>
+    <a href="#home" style="color: rgb(83, 8, 91); text-decoration: none; border: 1px solid rgb(83, 8, 91); padding: 6px 12px; display: inline-block;">Back to top</a>
 </div> 
+</main>
     <footer style="text-align: center; margin-top: 40px; padding: 20px;">
 
     <p>Made by Aine</p>

@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dean</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 style="text-align: center;">Meet Dean</h1>
-    <img src="dean.jpg" alt="Cat named Dean" width="200" height="200" style="display: block; margin: 0 auto;">
-    <h2 style="text-align: center;">Fun facts about Dean</h2>
-    <ul style="text-align: center; list-style-position: inside; padding-left: 0;">
-        <li>Dean was born February 15, 2025.</li>
-        <li>He loves to play with toys and hide my paint brushes and pencils.</li>
-        <li>He is very cuddly and loves to snuggle.</li>
-        <li>Dean loves to supervise all the other humans and pets in the household.</li>
-    </ul>
-    <p>Dean is named after the character Dean from the TV show "Supernatural." He is a very affectionate cat toward girls and loves to play with small stuffed toys. We like to call Dean the "supervisor" because he walks around the house like he owns it. One of Dean's nicknames is Punk uh Punk because he won't hesitate to slap someone with his paws. He can be a bit rebellious and loves to get into mischief.</p>
-    <a href="my-first-site.html">Back to my website</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content" tabindex="-1">
+        <section aria-labelledby="dean-title">
+            <h1 id="dean-title" style="text-align: center;">Meet Dean</h1>
+            <img src="dean.jpg" alt="Cat named Dean" width="200" height="200" style="display: block; margin: 0 auto;">
+        </section>
+        <section aria-labelledby="dean-facts-title">
+            <h2 id="dean-facts-title" style="text-align: center;">Fun facts about Dean</h2>
+            <ul style="text-align: center; list-style-position: inside; padding-left: 0;">
+                <li>Dean was born February 15, 2025.</li>
+                <li>He loves to play with toys and hide my paint brushes and pencils.</li>
+                <li>He is very cuddly and loves to snuggle.</li>
+                <li>Dean loves to supervise all the other humans and pets in the household.</li>
+            </ul>
+            <p>Dean is named after the character Dean from the TV show "Supernatural." He is a very affectionate cat toward girls and loves to play with small stuffed toys. We like to call Dean the "supervisor" because he walks around the house like he owns it. One of Dean's nicknames is Punk uh Punk because he won't hesitate to slap someone with his paws. He can be a bit rebellious and loves to get into mischief.</p>
+        </section>
+        <nav aria-label="Return navigation">
+            <a href="my-first-site.html">Back to my website</a>
+        </nav>
+    </main>
 </body>
 </html>

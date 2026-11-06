@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Aine</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         .top-nav {
             display: flex;
@@ -25,14 +26,16 @@
     </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <nav class="top-nav" aria-label="Main navigation">
     <a href="my-first-site.html">Home</a>
     <a href="projects/projects.html">Projects</a>
 </nav>
+<main id="main-content" tabindex="-1" aria-labelledby="about-title">
 <div style="background-color: lightblue; padding: 20px;">
 <div style="background-color: rgb(165, 90, 188); padding: 20px;">
 
-    <h1 style="text-align: center; color: rgb(55, 4, 70);">About Aine</h1>
+    <h1 id="about-title" style="text-align: center; color: rgb(55, 4, 70);">About Aine</h1>
 </div>
     <div style="background-color: #fff3b0; padding: 16px; border-radius: 10px;">
     <p style="text-align: left; color: rgb(167, 114, 36); font-style:italic; font-family: 'Lobster', cursive;">My name is Aine I am 24 years old and I love spending time with my pets and doing creative activities like painting, drawing and photography. I am persusing a career in IT and Cybersecurity. My ultimate Goal is to become a Cybersecurity analyst and build a better future for myself and my family. In 2023 I was Diagnosed with a rare condition called Onset Adult Stills disease a autoimmune condition that has physically and mentally changed my life. Even though it has been difficult to navigate my new life I am determined to keep pushing while I can and In the meantime Here are some cute pictures and facts about my pets.
@@ -42,5 +45,6 @@
     <img src="aine.jpg" alt="Aine" width="220" height="220" style="display: block; margin: 0 auto;">
     </div>
 </div>
+</main>
 </body>
 </html>
