@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework #3: What I Learned About Styling and Formatting</title>
-   <link rel="stylesheet" href="homework.3.css">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homework.3.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="homework-nav" aria-label="Main navigation">
-        <a href="my-first-site.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="projects/projects.html">Projects</a>
     </nav>
-  
 
     <main id="main-content" tabindex="-1">
         <h1 class="homework-header">What We Learned This Week in Class</h1>
@@ -23,7 +22,7 @@
             how to structure code for better readability and maintainability like a book shelf. During
             Week 3, Mr. Reena taught us how to use CSS to organize a website using
             Flexbox and Grid. I also learned how to make a website adjust to different
-            screen sizes, like phones, tablets, and computers, so it is easy to
+            screen sizes, like phones, tablets, and computers using @media so it is easy to
             navigate on different devices. This helped me understand how to make
             websites look better and work across devices. I am still learning and
             building my confidence in coding.
@@ -31,8 +30,13 @@
 
         <section aria-labelledby="class-example-title">
             <h2 id="class-example-title" class="example-header">What We Learned This Week: Example</h2>
-            <p class="example-image">This is an example of what the code @media query will look like and how it is  applied to the page that we created this week in class.</p>
-            <img class="example-image"src="Screenshot_26-10-2026_102757_docs.google.com.jpeg"
+            <p class="example-image">
+                This is an example of what the code @media query will look like and how it is
+                applied to the page that we created this week in class. For phones you will set
+                the px at 320, for tablet 768px and for laptop 1200px.
+            </p>
+            <img class="example-image"
+                 src="Screenshot_26-10-2026_102757_docs.google.com.jpeg"
                  alt="Screenshot of what we learned this week in class"
                  width="600">
         </section>
@@ -40,79 +44,79 @@
         <section aria-labelledby="flexbox-title">
             <h2 id="flexbox-title" class="example-header">Flexbox Example</h2>
             <p class="example-image">
-                Flexbox arranges items in a row or column. Like a parent container holding child elements, these 2 cards are
-                arranged in a row using display: flex.
+                Flexbox arranges items in a row or column. Like a parent container holding child elements,
+                these 2 cards are arranged in a row using display: flex.
             </p>
             <div class="flexbox-example">
                 <article class="flexbox-card">
-                    <h3> Flexbox</h3>
-                    <p> In a flexbox it will contain
-                        <ul>
-                            <li> display: flex; padding: 16px;</li>
-                            <li>gap: 16px;</li>
-                            <li>flex-direction: row;</li>
-
-                        </ul>
-                    </p>
+                    <h3>Flexbox</h3>
+                    <p>In a flexbox it will contain:</p>
+                    <ul>
+                        <li>display: flex; padding: 16px;</li>
+                        <li>gap: 16px;</li>
+                        <li>flex-direction: row;</li>
+                    </ul>
                 </article>
                 <article class="flexbox-card">
                     <h3>Uses of Flexbox for responsive layouts</h3>
-                    <ul> 
-                        <li> learning flexbox taught me how to line my website up and set my navigation links horizontally. or vertically.</li>
+                    <ul>
+                        <li>Learning flexbox taught me how to line my website up and set my navigation links horizontally or vertically.</li>
                         <li>Using flexbox also taught me how to align items and distribute space evenly like a book shelf.</li>
                     </ul>
                 </article>
-               
             </div>
         </section>
 
         <section aria-labelledby="grid-title">
             <h2 id="grid-title" class="example-header">CSS Grid Example</h2>
             <p class="example-image">
-               In CSS, a CSS Grid organizes items into rows and columns. This grid uses
-                <span class="highlight">display: grid</span> and changes to one column on a phone. Here im going to add photos to show how the grid laysout the images on the screen
+                In CSS, a CSS Grid organizes items into rows and columns. This grid uses
+                <span class="highlight">display: grid</span> and changes to one column on a phone.
+                Here I'm going to add photos to show how the grid lays out the images on the screen.
             </p>
             <div class="grid-example">
                 <article class="grid-card">
                     <div class="grid-card-image">
-                        <img src="kilo.jpg.jpg" alt="Kilo image">
+                        <img src="kilo.jpg.jpg" alt="Kilo">
                     </div>
-                    
                 </article>
                 <article class="grid-card">
                     <div class="grid-card-image">
-                        <img src="dean.jpg" alt="Dean image">
+                        <img src="dean.jpg" alt="Dean">
                     </div>
-                
                 </article>
                 <article class="grid-card">
                     <div class="grid-card-image">
-                        <img src="Philly.jpg" alt="Philly image">
+                        <img src="Philly.jpg" alt="Philly">
                     </div>
-                
                 </article>
                 <article class="grid-card">
                     <div class="grid-card-image">
-                        <img src="aine.jpg" alt="Aine image">
+                        <img src="aine.jpg" alt="Aine">
                     </div>
-                
                 </article>
             </div>
         </section>
 
         <section aria-labelledby="no-media-title">
-            <h2 id="no-media-title" class="example-header">Example: This Current Page will Not Fit on a Phone</h2>
-            <h3 class="example-paragraph"> 
-               In this example, the layout I created I intentionally fixed the box  at 1500 pixels wide and added no
-                CSS <span class="highlight">@media</span> query. With phone screens being much narrower, this current  layout will not fit properly, so
-                part of the example goes off-screen and requires sideways scrolling. This demonstrates how your website may look less polished, less user-friendly, and less accessible when using responsive design techniques.People may have harder time accessing the content on a smaller screen but this can be easily fixed.
-                <p> With that being said we can use CSS <span class="highlight">@media</span> queries to make our layout responsive
-                    cleaner and Ultimaly user friendly for all devices.
-            </h3>
-        </section> 
-        <h2 class="example-header2" id="applying-what-i-learned-title">Applying What I Learned</h2>
-        <h3> This link is the same page and layout but instead I applied the @media to help make it responsive automatically for different screen sizes. You can view it 
-            <a class="example-link" href="homework3-responsive.html">here</a></h3>
+            <h2 id="no-media-title" class="example-header">Example: This Current Page Will Not Fit on a Phone</h2>
+            <p class="example-paragraph">
+                In this example, the layout I created intentionally fixes the box at 1500 pixels wide and
+                adds no CSS <span class="highlight">@media</span> query. With phone screens being much
+                narrower, part of the example goes off-screen and requires sideways scrolling. This
+                demonstrates how a website may look less polished, less user-friendly, and less accessible
+                without responsive design. We can use CSS <span class="highlight">@media</span> queries
+                to make a layout cleaner and more user-friendly for all devices.
+            </p>
+        </section>
+
+        <section aria-labelledby="applying-what-i-learned-title">
+            <h2 class="example-header2" id="applying-what-i-learned-title">Applying What I Learned</h2>
+            <p>
+                This link opens the same page with a responsive layout that adjusts to different screen sizes:
+                <a class="example-link" href="homework3-responsive.html">View the responsive page</a>
+            </p>
+        </section>
     </main>
 </body>
-</html
+</html>
