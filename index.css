@@ -213,7 +213,7 @@ h3 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     .menu-bar a {
         padding: 7px 8px;
     }

@@ -3,40 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-first-website</title> 
-    <style> 
-    body {
-        background-color: rgb(9, 8, 8);
-        margin: 0;
-    }
-
-    .menu-bar {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 12px;
-        background-color: rgb(55, 4, 70);
-    }
-
-    .menu-bar a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 14px;
-        border-radius: 6px;
-    }
-
-    .menu-bar a:hover,
-    .menu-bar a:focus-visible {
-        background-color: rgb(120, 55, 140);
-    }
-
-    h1, h2, h3 {
-        text-decoration: underline wavy goldenrod;
-        text-underline-offset: 10px;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-    }
-</style>
+    <title>My-first-website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -109,9 +78,9 @@
    <img class="philly-portrait" src="Philly.jpg" alt="Philly, a pit mix dog">
  </div> 
    
-<div style="background-color: rgb(252, 190, 124); padding: 20px;">
-      <h3 style="text-align: center; margin-top: 20; color: rgb(255, 140, 0);"> Fun facts about Philly </h3>
-    <ul style="width: 300px; margin: 0 auto;">
+<div class="philly-facts">
+      <h3 class="philly-facts-heading">Fun facts about Philly</h3>
+    <ul class="pet-facts">
         <li>Philly was born March 17 2026</li>
         <li>He loves to play fetch and go on long walks</li>
         <li>He is very loyal and protective </li>
