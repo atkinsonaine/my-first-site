@@ -56,6 +56,14 @@ main {
     max-width: 100%;
 }
 
+.grid-card-image img {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
 img.example-image {
     display: block;
     width: 600px;
@@ -91,16 +99,15 @@ img.example-image {
     img.example-image {
         width: 100%;
     }
-.grid-card-image img {
-    display: block;
-    width: 140px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 12px;
 }
-    @media screen and (max-width: 320px) (max) {
-        img.example-image {
-            width: 100%;
-        }
+
+@media (max-width: 320px) {
+    .example-header {
+        font-size: 1.25rem;
+    }
+
+    .grid-example {
+        gap: 10px;
+        padding: 10px;
     }
 }

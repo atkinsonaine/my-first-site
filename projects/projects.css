@@ -80,3 +80,22 @@ body {
 .back-links a:focus-visible {
     color: #b94778;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .projects-header {
+        margin: 12px auto;
+        padding: 20px 14px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 0;
+    }
+}

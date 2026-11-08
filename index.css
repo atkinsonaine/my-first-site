@@ -1,0 +1,220 @@
+body {
+    background-color: rgb(65, 10, 113);
+    margin: 0;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+    background-color: rgb(55, 4, 70);
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.menu-bar a:hover,
+.menu-bar a:focus-visible {
+    background-color: rgb(120, 55, 140);
+}
+
+a:focus-visible {
+    outline: 3px solid goldenrod;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: 12px;
+    z-index: 1;
+    padding: 10px 14px;
+    background-color: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 12px;
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: underline wavy goldenrod;
+    text-underline-offset: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.intro-section,
+.intro-copy,
+.kilo-section,
+.kilo-facts,
+.dean-section,
+.dean-facts,
+.philly-section,
+.philly-facts {
+    padding: 20px;
+}
+
+.intro-section {
+    background-color: rgb(153, 102, 204);
+}
+
+.home-title {
+    text-align: center;
+    color: rgb(19, 8, 1);
+}
+
+.intro-copy {
+    background-color: rgb(255, 166, 201);
+}
+
+.intro-text {
+    text-align: left;
+    color: rgb(31, 46, 82);
+}
+
+.pet-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.pet-gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.kilo-section {
+    background-color: lightyellow;
+}
+
+.kilo-heading {
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.pet-portrait {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0;
+}
+
+.kilo-facts {
+    background-color: lightgreen;
+}
+
+.kilo-facts-heading {
+    text-align: center;
+    color: darkgreen;
+}
+
+.pet-facts {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.dean-section {
+    background-color: lavender;
+}
+
+.dean-heading {
+    text-align: center;
+    color: rgb(48, 25, 52);
+}
+
+.dean-facts {
+    background-color: lightpink;
+}
+
+.dean-facts-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(214, 64, 122);
+}
+
+.dean-description,
+.philly-description {
+    text-align: left;
+}
+
+.philly-section {
+    background-color: lightblue;
+}
+
+.philly-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(31, 46, 82);
+}
+
+.philly-portrait {
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.philly-facts {
+    background-color: rgb(252, 190, 124);
+}
+
+.philly-facts-heading {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(21, 22, 13);
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid rgb(83, 8, 91);
+    color: rgb(83, 8, 91);
+    text-decoration: none;
+}
+
+.site-footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .menu-bar {
+        gap: 4px;
+        padding: 8px;
+    }
+
+    .menu-bar a {
+        padding: 8px 10px;
+    }
+
+    main > div {
+        padding: 14px;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main ul {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-bar a {
+        padding: 7px 8px;
+    }
+}

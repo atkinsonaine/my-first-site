@@ -4,58 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-first-website</title> 
-    <style> 
-    body {
-        background-color: rgb(65, 10, 113);
-        margin: 0;
-    }
-
-    .menu-bar {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 12px;
-        background-color: rgb(55, 4, 70);
-    }
-
-    .menu-bar a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 14px;
-        border-radius: 6px;
-    }
-
-    .menu-bar a:hover,
-    .menu-bar a:focus-visible {
-        background-color: rgb(120, 55, 140);
-    }
-
-    a:focus-visible {
-        outline: 3px solid goldenrod;
-        outline-offset: 3px;
-    }
-
-    .skip-link {
-        position: absolute;
-        left: -10000px;
-        top: 12px;
-        z-index: 1;
-        padding: 10px 14px;
-        background-color: white;
-        color: black;
-    }
-
-    .skip-link:focus {
-        left: 12px;
-    }
-
-    h1, h2, h3 {
-        text-decoration: underline wavy goldenrod;
-        text-underline-offset: 10px;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-    }
-</style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -70,33 +20,31 @@
     </nav>
 </header>
 <main id="main-content" tabindex="-1">
-<div style="background-color: rgb(153, 102, 204); padding: 20px;">
-    <h1 id="home" style="text-align: center; color: rgb(19, 8, 1);">My First Website</h1>
+<div class="intro-section">
+    <h1 id="home" class="home-title">My First Website</h1>
    
 
-<div style="background-color: rgb(255, 166, 201); padding: 20px;">
-    <p style="text-align: left; color: rgb(31, 46, 82);">This is my very First website on which  you can find, My projects, About me,fun facts about my pets and their personalites and more..... 
+<div class="intro-copy">
+    <p class="intro-text">This is my very First website on which  you can find, My projects, About me,fun facts about my pets and their personalites and more.....
          But First lets introduce my pets
 </p>
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 30px;">
-    <img src="kilo.jpg.jpg" alt="Black-and-white Chihuahua named Kilo" width="180" height="180" style="object-fit: cover;">
-    <img src="dean.jpg" alt="Cat named Dean" width="180" height="180" style="object-fit: cover;">
-    <img src="Philly.jpg" alt="Dog named Philly" width="180" height="180" style="object-fit: cover;">
+<div class="pet-gallery">
+    <img src="kilo.jpg.jpg" alt="Black-and-white Chihuahua named Kilo">
+    <img src="dean.jpg" alt="Cat named Dean">
+    <img src="Philly.jpg" alt="Dog named Philly">
 </div>
 </div> 
 </div> 
- <div style="background-color: lightyellow; padding: 20px;">
-    <h2 id="kilo" style="text-align: center; color: darkgoldenrod;">
+ <div class="kilo-section">
+    <h2 id="kilo" class="kilo-heading">
         This is my Chihuahua his name is Kilo
     </h2>
-    <img src="kilo.jpg.jpg" alt="Chihuahua named Kilo"
-         width="200" height="200"
-         style="display: block; margin: 20px auto 0;">
+    <img class="pet-portrait" src="kilo.jpg.jpg" alt="Chihuahua named Kilo">
 </div>
-    <div style="background-color: lightgreen; padding: 20px;">
-    <h3 style="text-align: center; color: darkgreen;">Fun facts about Kilo</h3>
+    <div class="kilo-facts">
+    <h3 class="kilo-facts-heading">Fun facts about Kilo</h3>
 
-    <ul style="width: 300px; margin: 0 auto;">
+    <ul class="pet-facts">
         <li>Kilo was born June 02 2018</li>
         <li>He loves to chew bones and bark at people</li>
         <li>He is very small but full of energy</li>
@@ -104,48 +52,46 @@
     </ul>
     <p>This is Kilo, he is a small black and white Chihuaha who I have owned For 8 years. He is very energetic, protective and loves to model the thousands of bandanas i put on him. Kilo was given to me when one of my bestfriends dog had puppies and the mother regected him from the litter. Overall Kilo has been through thick and thin with my family and even though he can be a bit annoying with his barking I wouldnt trade him for the world.</p>
     </div> 
-    <div style="background-color: lavender; padding: 20px;">
-    <h2 id="dean" style="text-align: center; color: rgb(48, 25, 52);">
+    <div class="dean-section">
+    <h2 id="dean" class="dean-heading">
         This is my Cat his name is Dean
     </h2>
-    <img src="dean.jpg" alt="Cat named dean"
-         width="200" height="200"
-         style="display: block; margin: 20px auto 0;">
+    <img class="pet-portrait" src="dean.jpg" alt="Cat named dean">
 </div>
 
     
-<div style="background-color: lightpink; padding: 20px;">
- <h3 id="dean-facts" style="text-align: center; margin-top: 50px; color: rgb(214, 64, 122);"> Fun facts about Dean </h3>
+<div class="dean-facts">
+ <h3 id="dean-facts" class="dean-facts-heading"> Fun facts about Dean </h3>
 
-    <ul style="width: 300px; margin: 0 auto;">
+    <ul class="pet-facts">
         <li>Dean was born February 15 2025</li>
         <li>He loves to play with toys and hide my paint brushes and pencils</li>
         <li>He is very Cuddly and loves to snuggle</li>
         <li> Dean loves to supervise all the other humans and pets in the household</li>
     </ul>
-    <p style="text-align: left;">This is Dean, Dean is named after the character Dean from the TV show "Supernatural". He is a very affectionate cat towards girls and loves to play with small stuffed toys. We like to call Dean the "supervisor" because he walks around the house like he owns it. One of Deans nicknames is Punk uh Punk because he wont hesitate to slap someone with his paws. He can be a bit rebellious and loves to get into mischief.</p>
+    <p class="dean-description">This is Dean, Dean is named after the character Dean from the TV show "Supernatural". He is a very affectionate cat towards girls and loves to play with small stuffed toys. We like to call Dean the "supervisor" because he walks around the house like he owns it. One of Deans nicknames is Punk uh Punk because he wont hesitate to slap someone with his paws. He can be a bit rebellious and loves to get into mischief.</p>
 </div> 
 
- <div style="background-color: lightblue; padding: 20px;"> 
-    <h2 id="philly" style="text-align: center; margin-top: 50px; color: rgb(31, 46, 82);"> This is my Pit mix Philly </h2>
+ <div class="philly-section">
+    <h2 id="philly" class="philly-heading"> This is my Pit mix Philly </h2>
 
-   <img src="Philly.jpg" alt="Philly, a pit mix dog" width="220" height="220" style="display: block; margin: 0 auto;">
+   <img class="philly-portrait" src="Philly.jpg" alt="Philly, a pit mix dog">
  </div> 
    
-<div style="background-color: rgb(252, 190, 124); padding: 20px;">
-      <h3 style="text-align: center; margin-top: 20px; color: rgb(21, 22, 13);"> Fun facts about Philly </h3>
-    <ul style="width: 300px; margin: 0 auto;">
+<div class="philly-facts">
+      <h3 class="philly-facts-heading"> Fun facts about Philly </h3>
+    <ul class="pet-facts">
         <li>Philly was born March 17 2026</li>
         <li>He loves to play fetch and go on long walks</li>
         <li>He is very loyal and protective </li>
         <li> Philly's favorite thing to chew on is sticks and stuffed toys</li>
     </ul>
-    <p style="text-align: left;">This is Philly, he is a Pit mix who is half Dogo arengtino. My family and I have owned him  for 5 months. He is very energetic,  He loves to play Fetch, and is always by my side. Philly has a strong bond with my Dad who is his favorite person and is known for his protective nature. Even though Philly looks intimidating he is very goofy and cuddly. So far Philly is learning new tricks and is becoming a well-behaved dog in the family.</p>
+    <p class="philly-description">This is Philly, he is a Pit mix who is half Dogo arengtino. My family and I have owned him  for 5 months. He is very energetic,  He loves to play Fetch, and is always by my side. Philly has a strong bond with my Dad who is his favorite person and is known for his protective nature. Even though Philly looks intimidating he is very goofy and cuddly. So far Philly is learning new tricks and is becoming a well-behaved dog in the family.</p>
  
-    <a href="#home" style="color: rgb(83, 8, 91); text-decoration: none; border: 1px solid rgb(83, 8, 91); padding: 6px 12px; display: inline-block;">Back to top</a>
+    <a class="back-to-top" href="#home">Back to top</a>
 </div> 
 </main>
-    <footer style="text-align: center; margin-top: 40px; padding: 20px;">
+    <footer class="site-footer">
 
     <p>Made by Aine</p>
 </footer>
