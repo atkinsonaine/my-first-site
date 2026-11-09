@@ -129,6 +129,13 @@ body.home-page .home-title {
     margin-top: 30px;
 }
 
+#pets {
+    padding: 12px;
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    background-color: var(--color-surface);
+}
+
 .pet-gallery img {
     width: 180px;
     height: 180px;
