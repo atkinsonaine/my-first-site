@@ -7,15 +7,15 @@
 - The Projects section now has a heading, and each project card has a descriptive accessible link name.
 - The About page provides a descriptive, keyboard-accessible email link for direct contact.
 
-### WAVE results
+here are my  WAVE results
 
-WAVE reports are available for the deployed pages:
+WAVE reports are available for these 3 deployed pages:
 
 - Home: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2F)
 - About and contact: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2Fabout.html)
 - Projects: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2Fprojects%2Fprojects.html)
 
-The available report text says “No errors were detected” but also incorrectly says each page has no heading structure, so verify the rendered WAVE results in a browser before treating that automated result as conclusive.
+The available report text says “No errors were detected” as I changed the contrast of the colors of background and text but also incorrectly says each page has no header structure 
 
 ### WCAG AA contrast
 
