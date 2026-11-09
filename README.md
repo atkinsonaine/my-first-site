@@ -5,9 +5,7 @@
 - The home, About, and Projects pages each provide a clear page title, one level-one heading, semantic landmarks, and a skip link.
 - Descriptive alternative text identifies the meaningful photos on the home and About pages.
 - The Projects section now has a heading, and each project card has a descriptive accessible link name.
-- The About contact form labels every control and groups its required topic choices with a fieldset and legend.
-- Required fields use native validation, with inline errors exposed through `aria-invalid`, `aria-describedby`, and announced error messages.
-- Submitting a valid contact form opens a prefilled email draft, and the visitor sends it from their own email app.
+- The About page provides a descriptive, keyboard-accessible email link for direct contact.
 
 ### WAVE results
 
@@ -44,7 +42,3 @@ Ratios were checked against the WCAG relative-luminance formula and spot-checked
 
 - **Proximity:** Each project card groups its assignment title with its description, and consistent spacing separates the cards from one another.
 - **Similarity:** Repeated card shapes, border treatments, Lora headings, Nunito Sans body text, and the shared purple-and-pastel palette visually connect the three pages.
-
-## Contact form behavior
-
-The contact form uses `mailto:` to create a draft addressed to Aine; it does not transmit a message until the visitor sends it from their email application.
