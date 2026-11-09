@@ -194,36 +194,6 @@ body.home-page h1,
     text-align: center;
 }
 
-@media (max-width: 600px) {
-    .menu-bar {
-        gap: 4px;
-        padding: 8px;
-    }
-
-    .menu-bar a {
-        padding: 8px 10px;
-    }
-
-    main > div {
-        padding: 14px;
-    }
-
-    main img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    main ul {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 360px) {
-    .menu-bar a {
-        padding: 7px 8px;
-    }
-}
-
 body.about-page {
     overflow-wrap: anywhere;
 }
@@ -663,7 +633,30 @@ body.projects-page {
     color: #b94778;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+    .menu-bar {
+        gap: 4px;
+        padding: 8px;
+    }
+
+    .menu-bar a,
+    .homework2-page .homework-nav a {
+        padding: 8px 10px;
+    }
+
+    main > div {
+        padding: 14px;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main ul {
+        max-width: 100%;
+    }
+
     .homework2-page .homework-nav {
         padding: 0 12px;
     }
@@ -720,13 +713,11 @@ body.projects-page {
     }
 }
 
-@media (max-width: 500px) {
-    .homework2-page .homework-nav a {
-        padding: 8px 10px;
+@media (max-width: 360px) {
+    .menu-bar a {
+        padding: 7px 8px;
     }
-}
 
-@media (max-width: 320px) {
     .example-header {
         font-size: 1.25rem;
     }
