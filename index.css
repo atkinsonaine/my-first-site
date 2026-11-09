@@ -107,7 +107,7 @@ body.home-page h3 {
     justify-content: center;
     padding: 12px;
     border: 3px solid var(--color-primary);
-    background-color: #fff;
+    background-color: #fff8dc;
 }
 
 body.home-page .home-title {
@@ -397,7 +397,7 @@ body.homework2-page {
     margin: 0;
     padding: 12px;
     border: 1px solid #b8860b;
-    background-color: #fff;
+    background-color: #fff8dc;
 }
 
 .spaced-box {
