@@ -1,4 +1,4 @@
-# Milestone 2: Accessible, intentional design
+# Milestone 3: Accessible, intentional design
 
 ## Accessibility
 
