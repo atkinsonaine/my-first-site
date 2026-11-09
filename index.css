@@ -24,6 +24,12 @@ body {
     background-color: rgb(120, 55, 140);
 }
 
+:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px #fff;
+}  
+
 a:focus-visible {
     outline: 3px solid goldenrod;
     outline-offset: 3px;
