@@ -4,47 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Aine</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .top-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            padding: 12px;
-        }
-
-        .top-nav a {
-            display: inline-block;
-            padding: 10px 16px;
-            border: 2px solid rgb(55, 4, 70);
-            border-radius: 8px;
-            background-color: rgb(228, 228, 237);
-            color: rgb(55, 4, 70);
-            font-weight: bold;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<nav class="top-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="projects/projects.html">Projects</a>
-</nav>
-<main id="main-content" tabindex="-1" aria-labelledby="about-title">
-<div style="background-color: lightblue; padding: 20px;">
-<div style="background-color: rgb(165, 90, 188); padding: 20px;">
-
-    <h1 id="about-title" style="text-align: center; color: rgb(55, 4, 70);">About Aine</h1>
-</div>
-    <div style="background-color: #fff3b0; padding: 16px; border-radius: 10px;">
-    <p style="text-align: left; color: rgb(167, 114, 36); font-style:italic; font-family: 'Lobster', cursive;">My name is Aine I am 24 years old and I love spending time with my pets and doing creative activities like painting, drawing and photography. I am persusing a career in IT and Cybersecurity. My ultimate Goal is to become a Cybersecurity analyst and build a better future for myself and my family. In 2023 I was Diagnosed with a rare condition called Onset Adult Stills disease a autoimmune condition that has physically and mentally changed my life. Even though it has been difficult to navigate my new life I am determined to keep pushing while I can and In the meantime Here are some cute pictures and facts about my pets.
-    </p>
-    </div>
-    <div style="background-color: #4bc894; width: fit-content; max-width: 100%; margin: 20px auto; padding: 8px; border-radius: 10px;">
-    <img src="aine.jpg" alt="Aine" width="220" height="220" style="display: block; margin: 0 auto;">
-    </div>
-</div>
-</main>
+<body class="about-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects/projects.html">Projects</a>
+    </nav>
+    <main id="main-content" tabindex="-1" aria-labelledby="about-title">
+        <div class="about-outer">
+            <div class="about-heading-wrap">
+                <h1 id="about-title" class="about-heading">About Aine</h1>
+            </div>
+            <div class="about-copy">
+                <p class="about-copy-text">My name is Aine I am 24 years old and I love spending time with my pets and doing creative activities like painting, drawing and photography. I am persuing a career in IT and Cybersecurity. My ultimate Goal is to become a Cybersecurity analyst and build a better future for myself and my family. In 2023 I was Diagnosed with a rare condition called Onset Adult Stills disease a autoimmune condition that has physically and mentally changed my life. Even though it has been difficult to navigate my new life I am determined to keep pushing while I can and In the meantime Here are some cute pictures and facts about my pets.</p>
+            </div>
+            <div class="about-photo-wrap">
+                <img class="about-photo" src="aine.jpg" alt="Aine">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
