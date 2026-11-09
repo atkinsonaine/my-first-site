@@ -401,6 +401,11 @@ body.about-page {
     background-color: var(--color-primary-hover);
 }
 
+.contact-section a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 .profile-title,
 .profile-facts-title {
     text-align: center;
