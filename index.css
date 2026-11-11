@@ -190,7 +190,7 @@ body.home-page .philly-white-pitbull-facts-heading {
 .dean-snowshoe-cat-secondary-photo-frame,
 .philly-white-pitbull-secondary-photo-frame {
     margin: 0;
-    justify-self: end;
+    justify-self: center;
 }
 
 .kilo-chihuahua-facts-list,
@@ -393,16 +393,6 @@ body.philly-white-pitbull-profile {
     padding: 12px;
     border-radius: 8px;
     background-color: #22294c;
-}
-
-.kilo-chihuahua-section > .kilo-chihuahua-photo-frame {
-    transform: translateX(10px);
-}
-
-.kilo-chihuahua-secondary-photo-frame {
-    margin: 0;
-    justify-self: end;
-    transform: translateX(-94px);
 }
 
 .kilo-chihuahua-photo,
@@ -920,6 +910,51 @@ body.projects-page {
 }
 
 /* Responsive styles shared across pages */
+@media (min-width: 769px) and (max-width: 900px) {
+    .kilo-chihuahua-layout,
+    .dean-snowshoe-cat-layout,
+    .philly-white-pitbull-layout,
+    .kilo-chihuahua-description-row,
+    .dean-snowshoe-cat-description-row,
+    .philly-white-pitbull-description-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .kilo-chihuahua-description-row,
+    .dean-snowshoe-cat-description-row,
+    .philly-white-pitbull-description-row {
+        grid-column: 1;
+    }
+
+    .kilo-chihuahua-photo-frame,
+    .dean-snowshoe-cat-photo-frame,
+    .philly-white-pitbull-photo-frame,
+    .kilo-chihuahua-secondary-photo-frame,
+    .dean-snowshoe-cat-secondary-photo-frame,
+    .philly-white-pitbull-secondary-photo-frame {
+        justify-self: center;
+        margin: 0 auto;
+    }
+
+    .kilo-chihuahua-facts,
+    .dean-snowshoe-cat-facts,
+    .philly-white-pitbull-facts,
+    .kilo-chihuahua-description-box,
+    .dean-snowshoe-cat-description-box,
+    .philly-white-pitbull-description-box,
+    .philly-white-pitbull-description {
+        text-align: center;
+    }
+
+    .kilo-chihuahua-facts-list,
+    .dean-snowshoe-cat-facts-list,
+    .philly-white-pitbull-facts-list {
+        padding-left: 0;
+        list-style-position: inside;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .kilo-chihuahua-layout,
     .dean-snowshoe-cat-layout,
@@ -934,6 +969,75 @@ body.projects-page {
     .dean-snowshoe-cat-description-row,
     .philly-white-pitbull-description-row {
         grid-column: 1;
+    }
+
+    body.home-page .intro-section {
+        padding: 12px;
+    }
+
+    body.home-page .intro-copy {
+        padding: 16px;
+    }
+
+    body.home-page .intro-text {
+        margin: 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .kilo-chihuahua-section,
+    .dean-snowshoe-cat-section,
+    .philly-white-pitbull-section {
+        padding: 12px;
+    }
+
+    .kilo-chihuahua-layout,
+    .dean-snowshoe-cat-layout,
+    .philly-white-pitbull-layout {
+        align-items: center;
+        gap: 16px;
+        padding: 14px;
+    }
+
+    .kilo-chihuahua-photo-frame,
+    .dean-snowshoe-cat-photo-frame,
+    .philly-white-pitbull-photo-frame {
+        justify-self: center;
+        margin: 0 auto;
+    }
+
+    .kilo-chihuahua-secondary-photo-frame,
+    .dean-snowshoe-cat-secondary-photo-frame,
+    .philly-white-pitbull-secondary-photo-frame {
+        justify-self: center;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .kilo-chihuahua-facts,
+    .dean-snowshoe-cat-facts,
+    .philly-white-pitbull-facts,
+    .kilo-chihuahua-description-row,
+    .dean-snowshoe-cat-description-row,
+    .philly-white-pitbull-description-row {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .kilo-chihuahua-description-box,
+    .dean-snowshoe-cat-description-box,
+    .philly-white-pitbull-description-box,
+    .philly-white-pitbull-description {
+        text-align: center;
+    }
+
+    .kilo-chihuahua-facts-list,
+    .dean-snowshoe-cat-facts-list,
+    .philly-white-pitbull-facts-list {
+        padding-left: 0;
+        list-style-position: inside;
+        text-align: center;
     }
 
     .menu-bar {
