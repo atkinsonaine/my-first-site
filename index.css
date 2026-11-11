@@ -10,6 +10,7 @@
     --color-border: #6b3a78;
 }
 
+/* Shared styles */
 body.home-page,
 body.about-page,
 body.projects-page {
@@ -28,7 +29,6 @@ body.projects-page h1 {
 }
 
 body.home-page {
-    background-color: var(--color-page-bg);
     margin: 0;
 }
 
@@ -78,18 +78,16 @@ body.home-page h2,
 body.home-page h3 {
     color: var(--color-primary);
     font-weight: 700;
-    text-decoration: underline wavy var(--color-primary);
-    text-underline-offset: 10px;
+    font-size: 1.15em;
+    text-decoration: none;
 }
 
+/* Home page (index.html) */
 .intro-section,
 .intro-copy,
-.kilo-section,
-.kilo-facts,
-.dean-section,
-.dean-facts,
-.philly-section,
-.philly-facts {
+.kilo-chihuahua-facts,
+.dean-snowshoe-cat-facts,
+.philly-white-pitbull-facts {
     padding: 20px;
 }
 
@@ -107,9 +105,8 @@ body.home-page h3 {
 
 body.home-page .home-title {
     text-align: center;
-    color: var(--color-primary);
     margin: 0;
-    text-decoration: none;
+    font-size: clamp(1.5rem, 4.5vw, 3rem);
 }
 
 .intro-copy {
@@ -119,108 +116,92 @@ body.home-page .home-title {
 .intro-text {
     text-align: left;
     color: var(--color-text);
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
-.pet-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
 
-#pets {
-    padding: 12px;
-    border: 2px solid var(--color-primary);
-    border-radius: 12px;
-    background-color: var(--color-surface);
-}
 
-.pet-gallery img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.kilo-section {
-    background-color: var(--color-surface);
-}
-
-.kilo-heading {
+.kilo-chihuahua-heading,
+.kilo-chihuahua-facts-heading,
+.dean-snowshoe-cat-heading,
+.dean-snowshoe-cat-facts-heading,
+.philly-white-pitbull-heading,
+.philly-white-pitbull-facts-heading {
     text-align: center;
     color: var(--color-primary);
+    margin-top: 0;
 }
 
-.pet-portrait {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 20px auto 0;
+body.home-page .kilo-chihuahua-heading,
+body.home-page .dean-snowshoe-cat-heading,
+body.home-page .philly-white-pitbull-heading {
+    font-size: 1.5em;
 }
 
-.kilo-facts {
-    background-color: var(--color-soft);
+body.home-page .kilo-chihuahua-facts-heading,
+body.home-page .dean-snowshoe-cat-facts-heading,
+body.home-page .philly-white-pitbull-facts-heading {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
-.kilo-facts-heading {
-    text-align: center;
-    color: var(--color-primary);
-}
-
-.pet-facts {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.dean-section {
-    background-color: var(--color-surface);
-}
-
-.dean-heading {
-    text-align: center;
-    color: var(--color-primary);
-}
-
-.dean-facts {
-    background-color: var(--color-soft-pink);
-}
-
-.dean-facts-heading {
-    text-align: center;
-    margin-top: 50px;
-    color: var(--color-primary);
-}
-
-.dean-description,
-.philly-description {
+.kilo-chihuahua-description-box,
+.dean-snowshoe-cat-description-box,
+.philly-white-pitbull-description-box,
+.philly-white-pitbull-description {
+    margin: 0;
+    min-width: 0;
     text-align: left;
 }
 
-.philly-section {
-    background-color: var(--color-surface);
+.kilo-chihuahua-description-box,
+.kilo-chihuahua-facts-box,
+.dean-snowshoe-cat-description-box,
+.dean-snowshoe-cat-facts-box,
+.philly-white-pitbull-description-box,
+.philly-white-pitbull-facts-box {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #d9efff;
 }
 
-.philly-heading {
-    text-align: center;
-    margin-top: 50px;
-    color: var(--color-primary);
+.dean-snowshoe-cat-layout .dean-snowshoe-cat-description-box,
+.dean-snowshoe-cat-layout .dean-snowshoe-cat-facts-box {
+    background-color: #e6d5f5;
 }
 
-.philly-portrait {
-    display: block;
-    width: 220px;
-    height: 220px;
+.philly-white-pitbull-layout .philly-white-pitbull-description-box,
+.philly-white-pitbull-layout .philly-white-pitbull-facts-box {
+    background-color: #fce5ef;
+}
+
+.kilo-chihuahua-description-row,
+.dean-snowshoe-cat-description-row,
+.philly-white-pitbull-description-row {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 20px;
+}
+
+.kilo-chihuahua-secondary-photo-frame,
+.dean-snowshoe-cat-secondary-photo-frame,
+.philly-white-pitbull-secondary-photo-frame {
+    margin: 0;
+    justify-self: end;
+}
+
+.kilo-chihuahua-facts-list,
+.dean-snowshoe-cat-facts-list,
+.philly-white-pitbull-facts-list,
+.kilo-chihuahua-profile-facts-list,
+.dean-snowshoe-cat-profile-facts-list,
+.philly-white-pitbull-profile-facts-list {
+    width: 300px;
+    max-width: 100%;
     margin: 0 auto;
-}
-
-.philly-facts {
-    background-color: var(--color-soft-pink);
-}
-
-.philly-facts-heading {
-    text-align: center;
-    margin-top: 20px;
-    color: var(--color-primary);
 }
 
 .back-to-top {
@@ -231,12 +212,19 @@ body.home-page .home-title {
     text-decoration: none;
 }
 
+.back-to-top-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .site-footer {
     margin-top: 40px;
     padding: 20px;
     text-align: center;
 }
 
+/* About Me page (about.html) */
 body.about-page {
     overflow-wrap: anywhere;
 }
@@ -280,7 +268,6 @@ body.about-page {
     background-color: var(--color-surface);
     color: var(--color-text);
     font-style: italic;
-    font-family: "Nunito Sans", Arial, sans-serif;
 }
 
 .about-photo-wrap {
@@ -292,17 +279,12 @@ body.about-page {
     background-color: var(--color-accent);
 }
 
-.about-photo,
-.profile-photo {
+.about-photo {
     display: block;
+    width: 220px;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-}
-
-.about-photo {
-    width: 220px;
-    height: 220px;
 }
 
 .contact-section {
@@ -326,29 +308,161 @@ body.about-page {
     text-decoration: underline;
 }
 
-.profile-title,
-.profile-facts-title {
+.contact-form {
+    display: grid;
+    gap: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+
+.contact-form fieldset label {
+    margin-right: 12px;
+}
+
+.contact-form button {
+    width: fit-content;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Pet profile pages (kilo.html, dean.html, philly.html) */
+.kilo-chihuahua-profile-heading,
+.kilo-chihuahua-profile-facts-heading,
+.dean-snowshoe-cat-profile-heading,
+.dean-snowshoe-cat-profile-facts-heading,
+.philly-white-pitbull-profile-heading,
+.philly-white-pitbull-profile-facts-heading {
     text-align: center;
 }
 
-.profile-photo {
-    width: 200px;
-    height: 200px;
+body.kilo-chihuahua-profile,
+body.dean-snowshoe-cat-profile,
+body.philly-white-pitbull-profile {
+    min-height: 100vh;
+    margin: 0;
 }
 
-.profile-facts {
+body.kilo-chihuahua-profile {
+    background-color: var(--color-surface);
+}
+
+body.dean-snowshoe-cat-profile {
+    background-color: #e6d5f5;
+}
+
+body.philly-white-pitbull-profile {
+    background-color: var(--color-soft-pink);
+}
+
+.kilo-chihuahua-photo-frame,
+.dean-snowshoe-cat-photo-frame,
+.philly-white-pitbull-photo-frame {
+    width: fit-content;
+    max-width: 100%;
+    margin: 20px auto 0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #22294c;
+}
+
+.kilo-chihuahua-section > .kilo-chihuahua-photo-frame {
+    transform: translateX(10px);
+}
+
+.kilo-chihuahua-secondary-photo-frame {
+    margin: 0;
+    justify-self: end;
+    transform: translateX(-94px);
+}
+
+.kilo-chihuahua-photo,
+.dean-snowshoe-cat-photo,
+.philly-white-pitbull-photo,
+.kilo-chihuahua-profile-photo,
+.dean-snowshoe-cat-profile-photo,
+.philly-white-pitbull-profile-photo {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kilo-chihuahua-section,
+.dean-snowshoe-cat-section,
+.philly-white-pitbull-section {
+    padding: 20px;
+    background-color: var(--color-primary);
+}
+
+.kilo-chihuahua-layout,
+.dean-snowshoe-cat-layout,
+.philly-white-pitbull-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    border: 4px solid #000;
+    border-radius: 12px;
+    background-color: #fff8dc;
+}
+
+.kilo-chihuahua-layout > .kilo-chihuahua-heading,
+.dean-snowshoe-cat-layout > .dean-snowshoe-cat-heading,
+.philly-white-pitbull-layout > .philly-white-pitbull-heading {
+    grid-column: 1 / -1;
+}
+
+.kilo-chihuahua-facts,
+.dean-snowshoe-cat-facts,
+.philly-white-pitbull-facts {
+    min-width: 0;
+}
+
+.kilo-chihuahua-profile-facts-list,
+.dean-snowshoe-cat-profile-facts-list,
+.philly-white-pitbull-profile-facts-list {
     text-align: center;
     list-style-position: inside;
     padding-left: 0;
 }
 
-body.philly-profile .profile-facts,
-.pet-facts {
-    width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
+/* Homework 2 page (homework2.html) */
 body.homework2-page {
     background-color: #4ac6e8;
 }
@@ -381,10 +495,6 @@ body.homework2-page {
     color: #bf917f;
     font-weight: bold;
     font-family: Georgia, serif;
-}
-
-.homework2-page .highlight {
-    color: #bf917f;
 }
 
 .heading {
@@ -454,6 +564,7 @@ body.homework2-page {
     text-decoration: none;
 }
 
+/* Homework 3 pages (homework3.html, homework3-responsive.html) */
 body.homework3-page,
 body.homework3-responsive-page {
     background-color: rgb(213, 164, 237);
@@ -619,14 +730,113 @@ img.example-image {
     text-decoration-color: rgb(206, 50, 6);
 }
 
+/* Homework 5 page (homework5.html) */
+body.homework5-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-soft);
+    color: var(--color-text);
+    font-family: "Nunito Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.homework5-header,
+.homework5-main,
+.homework5-footer {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.homework5-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.homework5-nav a,
+.homework5-footer a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+}
+
+.homework5-header h1 {
+    margin-bottom: 0;
+    color: var(--color-primary);
+    font-family: "Lora", Georgia, serif;
+}
+
+.homework5-header > p {
+    margin-top: 0;
+}
+
+.homework5-card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.homework5-card h2,
+.homework5-card h3 {
+    color: var(--color-primary);
+    font-family: "Lora", Georgia, serif;
+}
+
+.homework5-card h2 {
+    margin-top: 0;
+}
+
+.homework5-website-figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.homework5-website-figure img {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.homework5-website-figure figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.homework5-card article + article {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-border);
+}
+
+.homework5-card a {
+    color: var(--color-primary);
+    overflow-wrap: anywhere;
+}
+
+.homework5-footer {
+    margin-top: 28px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+/* Projects page (projects.html) */
 body.projects-page {
     min-height: 100vh;
     margin: 0;
     padding: 24px;
-    background-color: var(--color-page-bg);
-    color: var(--color-text);
-    font-family: "Nunito Sans", Arial, sans-serif;
-    line-height: 1.6;
 }
 
 .projects-header {
@@ -709,7 +919,23 @@ body.projects-page {
     color: var(--color-primary-hover);
 }
 
+/* Responsive styles shared across pages */
 @media (max-width: 768px) {
+    .kilo-chihuahua-layout,
+    .dean-snowshoe-cat-layout,
+    .philly-white-pitbull-layout,
+    .kilo-chihuahua-description-row,
+    .dean-snowshoe-cat-description-row,
+    .philly-white-pitbull-description-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .kilo-chihuahua-description-row,
+    .dean-snowshoe-cat-description-row,
+    .philly-white-pitbull-description-row {
+        grid-column: 1;
+    }
+
     .menu-bar {
         gap: 4px;
         padding: 8px;
@@ -718,6 +944,14 @@ body.projects-page {
     .menu-bar a,
     .homework2-page .homework-nav a {
         padding: 8px 10px;
+    }
+
+    body.homework5-page {
+        padding: 12px;
+    }
+
+    .homework5-card {
+        padding: 16px;
     }
 
     main > div {
