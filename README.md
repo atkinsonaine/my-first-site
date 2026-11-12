@@ -3,7 +3,8 @@
 ## Accessibility
 
 - In The home, About, and Projects pages each provide a clear page title, one level-one heading, semantic landmarks, and a skip link.
- I added Descriptive alternative text identifies the meaningful photos on the home and About pages.
+- edited pet sections to fix in a padded box so it draws user to the page 
+ I added Descriptive alternative text to indentify pets  on the homepage and me on the  About me  page.
 - In the Projects section now has a heading, and each project card has a descriptive accessible link name.
 - I also added In the About page provides a descriptive, keyboard-accessible email link for direct contact.
 
@@ -20,5 +21,7 @@ The available report text says “No errors were detected” but last week I cha
 
 ## Visual design
 
-- **Proximity:** Each of my project cards groups its assignment title with its description, and consistent spacing separates the cards from one another.
-- **Similarity:** I Repeated card shapes, border treatments, Lora headings, Nunito Sans body text, and the shared purple-and-pastel palette visually connect the three pages.
+- **Proximity:** I applied the Gestalt principle of proximity by grouping each project card's title with its description and spacing the cards consistently.
+- **Similarity:** I applied the Gestalt principle of similarity by repeating card shapes, border treatments, typography, and colors across all three pages.
+- **Color palette:** I added primary, accent, neutral, and supporting color variables to the top of the shared CSS file.
+- **CSS colors:** I updated the CSS colors yesterday and today to improve text-background contrast and keep the three pages visually consistent.
