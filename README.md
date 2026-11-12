@@ -25,3 +25,7 @@ The available report text says “No errors were detected” but last week I cha
 - **Similarity:** I applied the Gestalt principle of similarity by repeating card shapes, border treatments, typography, and colors across all three pages.
 - **Color palette:** I added primary, accent, neutral, and supporting color variables to the top of the shared CSS file.
 - **CSS colors:** I updated the CSS colors yesterday and today to improve text-background contrast and keep the three pages visually consistent.
+
+## Homework 5
+
+Homework 5 compares the California Wildlife Center and Milo Foundation websites, focusing on how proximity and similarity affect usability.
