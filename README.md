@@ -1,7 +1,7 @@
 # Milestone 3: Accessible, intentional design
 
 ## Accessibility
-
+- added hierarchy on my pages
 - In The home, About, and Projects pages each provide a clear page title, one level-one heading, semantic landmarks, and a skip link.
 - edited pet sections to fix in a padded box so it draws user to the page 
  I added Descriptive alternative text to indentify pets  on the homepage and me on the  About me  page.
@@ -13,7 +13,7 @@ here are my  WAVE results
 WAVE reports are available for these 3 deployed pages:
 
 - Home: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2F)
-- About and contact: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2Fabout.html)
+- About and contact: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2Fabout-me%2Fabout.html)
 - Projects: [WAVE report](https://wave.webaim.org/report?url=https%3A%2F%2Fatkinsonaine.github.io%2Fmy-first-site%2Fprojects%2Fprojects.html)
 
 The available report text says “No errors were detected” but last week I changed the contrast of the colors of background and text to have a cleaner theme within my three pages but also incorrectly says each page has no header structure 
@@ -28,4 +28,4 @@ The available report text says “No errors were detected” but last week I cha
 
 ## Homework 5
 
-Homework 5 compares the California Wildlife Center and Milo Foundation websites, focusing on how proximity and similarity affect usability.
+Added Homework 5 to my projects page where it  compares and critiques  the California Wildlife Center and Milo Foundation websites, focusing on how proximity and similarity affect usability.
